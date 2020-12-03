@@ -30,33 +30,13 @@
 				<button class="new-list-button">+</button>
 			</form>
 		</div>
-		<div class="current-list-container">
+		<div class="current-list-container" data-current-list-container>
 			<div class="current-list-header">
-				<h2 class="current-list-title">YouTube</h2>
-				<p class="task-counter">3 tasks remaining</p>
+				<h2 class="current-list-title" data-current-list-title>YouTube</h2>
+				<p class="task-counter" data-task-counter>3 tasks remaining</p>
 			</div>
 			<div class="todo-body">
-				<div class="tasks">
-					<div class="task">
-						<input type="checkbox" id="task-1" />
-						<label for="task-1"
-							><span class="custom-checkbox"></span>finish this app</label
-						>
-					</div>
-					<div class="task">
-						<input type="checkbox" id="task-2" />
-						<label for="task-2"
-							><span class="custom-checkbox"></span>bench 3 plates yo</label
-						>
-					</div>
-					<div class="task">
-						<input type="checkbox" id="task-3" />
-						<label for="task-3"
-							><span class="custom-checkbox"></span>tell jess you love
-							her</label
-						>
-					</div>
-				</div>
+				<div class="tasks" data-tasks></div>
 				<div class="new-task-creator">
 					<form action="" data-new-task-form>
 						<input
@@ -71,9 +51,17 @@
 				</div>
 				<div class="delete-stuff">
 					<button class="delete-button">Clear completed tasks</button
-					><button class="delete-button">Delete list</button>
+					><button class="delete-button" data-delete-list-button>
+						Delete list
+					</button>
 				</div>
 			</div>
 		</div>
+		<template data-task-template>
+			<div class="task">
+				<input type="checkbox" />
+				<label><span class="custom-checkbox"></span></label>
+			</div>
+		</template>
 	</body>
 </html>
