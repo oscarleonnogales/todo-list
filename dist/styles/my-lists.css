@@ -1,0 +1,37 @@
+:root {
+	--primary-color: rgb(54, 112, 199);
+	--light-color: #f4f4f4;
+	--dark-color: #333333;
+	--warning-color: rgb(99, 36, 36);
+}
+
+.my-lists-container {
+	grid-area: lists;
+}
+
+.list-list {
+	line-height: 1.7;
+	font-size: 1.2rem;
+	list-style: circle;
+	padding-left: 1.2rem;
+}
+
+.list-list li {
+}
+
+.list-list li.active {
+	font-weight: 700;
+}
+
+.list-list li:hover {
+	opacity: 0.7;
+	cursor: pointer;
+}
+
+.new-list-form {
+	font-size: 1.1rem;
+}
+
+.new-list-button {
+	font-size: 1.5rem;
+}

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+	<!--
+        change the empty span to a CSS pseudoelement for the custom checkbox
+        make responsive for mobile devices in a media query
+    -->
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Todo List</title>
+		<script src="main.js" defer></script>
+		<link rel="stylesheet" href="styles/main.css" type="text/css" />
+		<link rel="stylesheet" href="styles/my-lists.css" type="text/css" />
+		<link rel="stylesheet" href="styles/task-container.css" type="text/css" />
+	</head>
+	<body>
+		<h1 class="main-title">stuff I need to do</h1>
+		<div class="my-lists-container">
+			<h2 class="my-lists-title">My lists</h2>
+			<ul class="list-list" data-lists></ul>
+
+			<form action="" data-new-list-form>
+				<input
+					type="text"
+					class="new-list-form"
+					data-new-list-input
+					placeholder="new list name"
+					aria-label="new list name"
+				/>
+				<button class="new-list-button">+</button>
+			</form>
+		</div>
+		<div class="current-list-container">
+			<div class="current-list-header">
+				<h2 class="current-list-title">YouTube</h2>
+				<p class="task-counter">3 tasks remaining</p>
+			</div>
+			<div class="todo-body">
+				<div class="tasks">
+					<div class="task">
+						<input type="checkbox" id="task-1" />
+						<label for="task-1"
+							><span class="custom-checkbox"></span>finish this app</label
+						>
+					</div>
+					<div class="task">
+						<input type="checkbox" id="task-2" />
+						<label for="task-2"
+							><span class="custom-checkbox"></span>bench 3 plates yo</label
+						>
+					</div>
+					<div class="task">
+						<input type="checkbox" id="task-3" />
+						<label for="task-3"
+							><span class="custom-checkbox"></span>tell jess you love
+							her</label
+						>
+					</div>
+				</div>
+				<div class="new-task-creator">
+					<form action="" data-new-task-form>
+						<input
+							type="text"
+							class="new-task-form"
+							data-new-task-input
+							placeholder="new task name"
+							aria-label="new task name"
+						/>
+						<button class="new-task-button">+</button>
+					</form>
+				</div>
+				<div class="delete-stuff">
+					<button class="delete-button">Clear completed tasks</button
+					><button class="delete-button">Delete list</button>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
